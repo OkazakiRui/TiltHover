@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+body #tilt {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  background-color: lightcoral;
+  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transform: perspective(1000px);
+          transform: perspective(1000px);
+  -webkit-transition: -webkit-transform 0.1s;
+  transition: -webkit-transform 0.1s;
+  transition: transform 0.1s;
+  transition: transform 0.1s, -webkit-transform 0.1s;
+  position: relative;
+}
+
+body #tilt__title {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transform: perspective(5000px);
+          transform: perspective(5000px);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  line-height: 200px;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+/*# sourceMappingURL=style.css.map */
